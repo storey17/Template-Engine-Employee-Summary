@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+function generateHTML(answers) {
+    console.log(answers)
+    return `<!DOCTYPE html>
     <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +29,15 @@
                     <div class="col align-self-start">
                         <div class="card border-dark mb-4" style="width: 19rem;height: 19rem;">
                             <div class="card-header">
-                                <h5>Storey</h5>
-                                <h5><i class="fas fa-mug-hot"></i> Manager</h5>
+                                <h5>${answers.nameManager}</h5>
+                                <h5><i class="fas fa-mug-hot"></i> ${answers.titleManager ? answers.titleManager : " "}</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>1</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>storey@gmail.com</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Office: </strong>1
+                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idManager ? answers.idManager : " "}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailManager ? answers.emailManager : " "}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Office: </strong>${answers.officeNumberManager ? answers.officeNumberManager : " "}
                                     </li>
                                     </ul>
                                 </div>
@@ -45,15 +47,15 @@
                     <div class="col align-self-start">
                         <div class="card border-dark mb-4" style="width: 19rem;height: 19rem;">
                             <div class="card-header">
-                                <h5>Ryan</h5>
-                                <h5><i class="fas fa-laptop"></i> Engineer</h5>
+                                <h5>${answers.nameEngineer1}</h5>
+                                <h5><i class="fas fa-laptop"></i> ${answers.titleEngineer1}</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>2</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>ryan@gmail.com</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>ryan123</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer1}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer1}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>${answers.githubEngineer1}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -62,15 +64,15 @@
                     <div class="col align-self-start">
                         <div class="card border-dark mb-4" style="width: 19rem;height: 19rem;">
                             <div class="card-header">
-                                <h5>Stef</h5>
-                                <h5><i class="fas fa-laptop"></i> Engineer</h5>
+                                <h5>${answers.nameEngineer2}</h5>
+                                <h5><i class="fas fa-laptop"></i> ${answers.titleEngineer2}</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>3</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>stef@gmail.com</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>stef123</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer2}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer2}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>${answers.githubEngineer2}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,15 +81,15 @@
                     <div class="col align-self-start">
                         <div class="card border-dark mb-4" style="width: 19rem;height: 19rem;">
                             <div class="card-header">
-                                <h5>Francisco</h5>
-                                <h5><i class="fas fa-laptop"></i> Engineer</h5>
+                                <h5>${answers.nameEngineer3}</h5>
+                                <h5><i class="fas fa-laptop"></i> ${answers.titleEngineer3}</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>4</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>stef@gmail.com</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>francisco123</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idEngineer3}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailEngineer3}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>GitHub: </strong>${answers.githubEngineer3}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -96,15 +98,15 @@
                     <div class="col align-self-start">
                         <div class="card border-dark mb-4" style="width: 19rem;height: 19rem;">
                             <div class="card-header">
-                                <h5>Mason</h5>
-                                <h5><i class="fas fa-user-graduate"></i> Intern</h5>
+                                <h5>${answers.nameIntern}</h5>
+                                <h5><i class="fas fa-user-graduate"></i> ${answers.titleIntern}</h5>
                             </div>
                             <div class="card-body text-dark">
                                 <div class="card" style="width: 16rem;">
                                     <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>5</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>mason@gmail.com</li>
-                                    <li class="list-group-item" style="text-align:left"><strong>School: </strong>SMU</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>ID: </strong>${answers.idIntern}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>Email: </strong>${answers.emailIntern}</li>
+                                    <li class="list-group-item" style="text-align:left"><strong>School: </strong>${answers.schoolIntern}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -117,4 +119,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body></html>
+</body></html>`;
+}
+
+
+module.exports = generateHTML
